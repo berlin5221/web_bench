@@ -30,7 +30,7 @@ class DeployBenchHandler(tornado.web.RequestHandler):
             operator = self.get_argument('operator')
             appid = self.get_argument('appid', default='0')
             _sid = self.get_argument('_sid', default='0')
-            domain = self.get_argument('domain', 'recproxy-99-8.zue.alipay.com')
+            domain = self.get_argument('domain', 'xxx')
         except tornado.web.MissingArgumentError as e:
             errMsg = 'Missing argument %s.' % e.arg_name
             return self.return_err(1001, errMsg)
